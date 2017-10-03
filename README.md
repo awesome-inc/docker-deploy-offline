@@ -10,4 +10,4 @@ Build and start
 docker-compose up
 ```
 
-and fire up [http://localhost:80](http://localhost:80) to see the sample app running.
+and fire up [http://localhost:8080](http://localhost:8080) to see the sample app running.
