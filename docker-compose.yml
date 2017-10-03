@@ -2,9 +2,7 @@ version: '3'
 
 services:
   myapp:
-    image: myapp
+    image: ${REGISTRY:-localhost:5000}/${REPOSITORY}/myapp:${TAG}
     build:
       context: ./myapp
       dockerfile: Dockerfile
-    ports:
-      - "8080:80"
