@@ -1,3 +1,5 @@
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/awesome-inc/doccker-deploy-offline/master)
+
 # docker-deploy-offline
 
 How to use docker for (almost) continuous delivery in an offline environment.
