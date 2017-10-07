@@ -1,7 +1,7 @@
 @title[Introduction]
 # Offline <span style="color: #e49436">Docker</span>
 
-#### How to use docker for (almost) continuous delivery in an offline environment.*
+#### How to use docker for (almost) continuous delivery to an offline environment.*
 <br>
 <br>
 <span style="color: #bbb; font-size: 80%">[ Docker, Compose, Linux, Windows ]</span>

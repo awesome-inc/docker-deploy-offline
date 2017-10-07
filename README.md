@@ -2,7 +2,7 @@
 
 # docker-deploy-offline
 
-How to use docker for (almost) continuous delivery in an offline environment.
+How to use docker for (almost) continuous delivery to an offline environment.
 
 ## Packaging
 
