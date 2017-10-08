@@ -16,9 +16,9 @@
 
 ---
 
-@title[Step 1. Build & Package]
+@title[Step 1. Build & Push]
 
-### <span style="color: #e49436">STEP 1. Build & Package</span>
+### <span style="color: #e49436">STEP 1. Build & Push</span>
 <br>
 
 ```shell
@@ -33,26 +33,7 @@ docker-compose push
 
 ---
 
-Fire up the registry frontend on [http://localhost:8080](http://localhost:8080) and watch your built images.
-
----
-
-### Docker Registry UI Welcome
-<br>
-
-![Docker Registry UI Welcome](images/ui-00-welcome.png)
-
----
-
-### Empty before push
-<br>
-
-![Empty before push](images/ui-01-empty.png)
-
----
-
-### See docker images
-<br>
+Fire up the registry frontend on [:8080](http://localhost:8080) and see your images:
 
 ![See docker images](images/ui-02-pushed.png)
 
@@ -61,8 +42,6 @@ Fire up the registry frontend on [http://localhost:8080](http://localhost:8080) 
 
 ### <span style="color: #e49436">STEP 2. Export</span>
 <br>
-
-Export docker images
 
 ```shell
 docker-compose run export
@@ -73,7 +52,7 @@ docker-compose run export
 ---
 @title[Step 3. Ship It!]
 
-### <span style="color: #e49436">STEP 2. Ship It!*</span>
+### <span style="color: #e49436">STEP 3. Ship It!*</span>
 <br>
 
 ![Cat customer waiting...](https://media.giphy.com/media/dw2jpsey5a5I4/giphy.gif)
@@ -81,9 +60,10 @@ docker-compose run export
 <span style="color: #bbb; font-size: 80%">*Not our business here.</span>
 
 ---
-@title[Step 4. Import again]
+@title[Step 4. Import]
 
-At the customer site, create & import the registry volume container
+### <span style="color: #e49436">STEP 4. Import</span>
+<br>
 
 ```shell
 docker-compose run import
@@ -93,6 +73,9 @@ docker-compose run import
 
 ---
 @title[Step 5. Run]
+
+### <span style="color: #e49436">STEP 5. Run</span>
+<br>
 
 Finally, start up the registry and you're good to go
 
@@ -104,4 +87,4 @@ docker-compose up -d registry ui
 
 ---
 
-#### View The <a target="_blank" href="https://github.com/awesome-inc/docker-deploy-offline">Code</a>
+### View The <a target="_blank" href="https://github.com/awesome-inc/docker-deploy-offline">Code</a>
