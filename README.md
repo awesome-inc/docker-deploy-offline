@@ -9,7 +9,7 @@ How to use docker for (almost) continuous delivery to an offline environment.
 Start a local registry, build and push your images
 
 ```bash
-docker-compose -f docker-compose.registry.yml up -d
+docker-compose up -d registry ui
 docker-compose build
 docker-compose push
 ```

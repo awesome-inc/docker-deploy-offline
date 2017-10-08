@@ -12,6 +12,9 @@ insert_final_newline = true
 indent_style = space
 indent_size = 2
 
+[*.sh]
+end_of_line = lf
+
 # CSharp and Visual Basic code style settings (Visual Studio default):
 # cf.: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
 [*.{cs,vb}]
