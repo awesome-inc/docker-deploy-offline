@@ -22,33 +22,74 @@
 <br>
 
 ```shell
-docker-compose -f docker-compose.registry.yml up -d
+docker-compose up -d registry ui
 docker-compose build
 docker-compose push
 ```
 
-@[1]
-@[2]
-@[3]
+@[1](Start local Docker Registry (on `:5000`, Web UI at [:8080](http://localhost:8080))
+@[2](Build Docker images (Tag to `localhost:5000`. Hint: Use [multi-stage builds](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)))
+@[3](Push built images to local registry)
 
 ---
+
 Fire up the registry frontend on [http://localhost:8080](http://localhost:8080) and watch your built images.
-Docker images are contained in the docker volume `docker_images`.
 
-TODO: image
+---?image=images/ui-00-welcome.png
+
+Docker Registry UI Welcome
+
+---?image=images/ui-01-empty.png
+
+Empty before push
+
+---?image=images/ui-02-empty.png
+
+See docker image `mycompany/myapp:latest`
 
 ---
-
 @title[Step 2. Export]
 
-TODO:
+### <span style="color: #e49436">STEP 2. Export</span>
+<br>
 
-- Export docker volume with built images `docker_images`,
-  cf.: [moby/issues/31417: how can i export an docker volume to a zip or tar file](https://github.com/moby/moby/issues/31417#issuecomment-283033514)
-- How to retag images?
+Docker images are contained in the docker volume `docker_images`.
+
+Let's export it
+
+```shell
+docker-compose run export
+```
+
+---
+@title[Step 3. Ship It!]
+
+### <span style="color: #e49436">STEP 2. Ship It!*</span>
+<br>
+<span style="color: #bbb; font-size: 80%">*Not our businees here.</span>
+
+---image?https://media.giphy.com/media/dw2jpsey5a5I4/giphy.gif
+
+Cat customer waiting...
+
+---
+@title[Step 4. Import again]
+
+At the customer site, create & import the registry volume container
+
+```shell
+docker-compose run import
+```
+---
+@title[Step 5. Run]
+
+Finally, start up the registry and you're good to go
+
+```shell
+docker-compose up -d registry ui
+```
 
 ---
 
-@title[Step 3. Run]
-
-TODO
+### Learn By Example
+#### View The <a target="_blank" href="https://github.com/awesome-inc/docker-deploy-offline">Code</a>
