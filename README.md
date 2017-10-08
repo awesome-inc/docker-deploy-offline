@@ -27,7 +27,7 @@ For motivational purposes wipe everything we just created, i.e.
 
 ```shell
 docker-compose down
-docker volume rm docker_images
+docker volume rm dockerdeployoffline_docker_images
 docker rmi localhost:5000/mycompany/myapp:latest
 ```
 
