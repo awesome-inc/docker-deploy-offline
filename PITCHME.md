@@ -27,13 +27,13 @@ docker-compose build
 docker-compose push
 ```
 
-@[1](Start local Docker Registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
-@[2](Build Docker images (Tag to `localhost:5000`. Hint: Use [multi-stage builds](https://docs.docker.com/engine/userguide/eng-image/multistage-build/)))
+@[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
+@[2](Build Docker images (tag to `localhost:5000`))
 @[3](Push built images to local registry)
 
 ---
 
-Fire up the registry frontend on [:8080](http://localhost:8080) and see your images:
+Registry frontend on [:8080](http://localhost:8080)
 
 ![See docker images](images/ui-02-pushed.png)
 
@@ -47,7 +47,7 @@ Fire up the registry frontend on [:8080](http://localhost:8080) and see your ima
 docker-compose run export
 ```
 
-@[1](Export volume container `docker_images`.)
+@[1](Export volume `docker_images -> ./data/registry.bz2`.)
 
 ---
 @title[Step 3. Ship It!]
@@ -69,7 +69,7 @@ docker-compose run export
 docker-compose run import
 ```
 
-@[1](Create & import volume container `docker_images`.)
+@[1](Import volume `./data/registry.bz2 -> docker_images`.)
 
 ---
 @title[Step 5. Run]
@@ -77,13 +77,13 @@ docker-compose run import
 ### <span style="color: #e49436">STEP 5. Run</span>
 <br>
 
-Finally, start up the registry and you're good to go
-
 ```shell
 docker-compose up -d registry ui
+docker run [registry:5000]/mycompany/myapp:latest
 ```
 
-@[1](Runs a standard registry with the volume container linked.)
+@[1](Start registry.)
+@[2](Example of running one of your images.)
 
 ---
 
