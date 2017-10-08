@@ -29,7 +29,7 @@ docker-compose push
 
 @[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
 @[2](Build Docker images (tag to `localhost:5000`))
-@[3](Push built images to local registry)
+@[3](Push images to registry)
 
 ---
 
@@ -60,30 +60,20 @@ docker-compose run export
 <span style="color: #bbb; font-size: 80%">*Not our business here.</span>
 
 ---
-@title[Step 4. Import]
+@title[Step 4. Import & Run]
 
-### <span style="color: #e49436">STEP 4. Import</span>
+### <span style="color: #e49436">STEP 4. Import & Run</span>
 <br>
 
 ```shell
 docker-compose run import
-```
-
-@[1](Import volume `./data/registry.bz2 -> docker_images`.)
-
----
-@title[Step 5. Run]
-
-### <span style="color: #e49436">STEP 5. Run</span>
-<br>
-
-```shell
 docker-compose up -d registry ui
 docker run [registry:5000]/mycompany/myapp:latest
 ```
 
-@[1](Start registry.)
-@[2](Example of running one of your images.)
+@[1](Import volume `./data/registry.bz2 -> docker_images`.)
+@[2](Start registry.)
+@[3](Run one of your images.)
 
 ---
 
