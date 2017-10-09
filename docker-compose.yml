@@ -2,7 +2,11 @@ version: '3'
 
 services:
   myapp:
-    image: ${REGISTRY:-localhost:5000}/${REPOSITORY}/myapp:${TAG}
+    image: ${REGISTRY:-localhost:5000}/${REPOSITORY:-mycompany}/myapp:${TAG:-latest}
     build:
       context: ./myapp
       dockerfile: Dockerfile
+      args:
+        GIT_COMMIT: ${GIT_COMMIT:-'git-commit'}
+        BUILD_DATE: ${BUILD_DATE:-'build-date'}
+        BUILD_VERSION: ${BUILD_VERSION:-'semver'}

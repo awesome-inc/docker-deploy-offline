@@ -42,11 +42,11 @@ services:
 
   export:
     <<: *data
-    command: ./export.sh
+    command: ash -c "echo 'Exporting docker images to /data/registry.bz2...' && tar -C /var/lib/registry -cjf /tmp/registry.bz2 ./ && mv /tmp/registry.bz2 /data/registry.bz2"
 
   import:
     <<: *data
-    command: ./import.sh
+    command: ash -c "echo 'Importing docker images...' && rm -rf /var/lib/registry/* && tar -C /var/lib/registry -xjf /data/registry.bz2"
 
 volumes:
     docker_images:
