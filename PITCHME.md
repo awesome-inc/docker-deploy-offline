@@ -26,7 +26,7 @@
 
 # Demo
 
-Press Down key for details.
+- Press Down key for details. |
 
 +++
 
@@ -89,27 +89,21 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 @[2](Start registry.)
 @[3](Run one of your images.)
 
-- Press Right key |
+- Press Right key. |
 
 ---
 
 ### Ok, got it! How to apply to my codebase?
 
+- Press Down key. |
+
 +++?code=docker-compose.yml
 
-@title[Step 1. Tag images]
-
-### <span style="color: #e49436">STEP 1. Tag images</span>
-<br>
-
-@[4](Tag to local/build registry `localhost:5000`)
+@[5](Tag images to local registry `localhost:5000`)
 
 +++?code=docker-compose.override.yml
 
-### <span style="color: #e49436">STEP 2. Add `docker-compose.override.yml`</span>
-<br>
-
-@[4](Tag to local/build registry `localhost:5000`)
+Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff. 
 
 +++
 ---
