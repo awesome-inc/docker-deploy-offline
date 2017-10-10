@@ -25,7 +25,7 @@
 ### <span style="color: #e49436">STEP 1. Build & Push</span>
 <br>
 
-```ShellSession
+```console
 $ docker-compose up -d registry ui
 ...
 Creating volume "dockerdeployoffline_docker_images" with default driver
