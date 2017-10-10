@@ -19,9 +19,9 @@
 
 - Disconnected, |
 - Remote or |
-- Inaccessible
+- Inaccessible |
 
-### How to deploy?
+### How to deploy? |
 
 ---
 
