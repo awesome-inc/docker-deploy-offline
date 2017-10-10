@@ -19,7 +19,7 @@
 
 - Disconnected, | 
 - Remote or |
-- Inaccessible |
+- just inaccessible |
 - How to deploy? |
 
 ---
@@ -61,7 +61,7 @@ Registry frontend on [:8080](http://localhost:8080)
 $ docker-compose run export
 ```
 
-@[1](Export volume `docker_images -> ./data/registry.bz2`.)
+- Export volume `docker_images -> ./data/registry.bz2`. |
 
 +++
 @title[Step 3. Ship It!]
@@ -93,7 +93,7 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 ---
 
-### Ok, got it! How to apply to my codebase?
+### Ok, got it! How to apply to my project?
 
 - Press Down key. |
 
@@ -103,9 +103,10 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 +++?code=docker-compose.override.yml
 
-Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff. 
+Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff.
 
-+++
+- That's it! |
+
 ---
 
 ### View The <a target="_blank" href="https://github.com/awesome-inc/docker-deploy-offline">Code</a>
