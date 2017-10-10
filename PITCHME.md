@@ -8,12 +8,19 @@
 
 ---
 
-#### No more <span style="color: gray">"We target Windows, so we can't use Docker."</span>
-#### No more <span style="color: gray">"We are on private networks, so no benefit from Docker."</span>
-<br>
-#### Just <span style="color: #e49436">docker-compose build</span>.
-#### Then <span style="color: #e49436">docker-compose push</span>.
+### <span style="color: #e49436">Initial Situation</span>
 
+#### Apps built with `Docker`
+
+#### Orchestrated with `docker-compose`
+
+---
+
+### <span style="color: #e49436">Production Environment</span>
+
+#### Disconnected, Remote or Inaccessible
+
+### How to deploy?
 ---
 
 # Demo
@@ -27,24 +34,13 @@
 
 ```console
 $ docker-compose up -d registry ui
-...
-Creating volume "dockerdeployoffline_docker_images" with default driver
-...
 $ docker-compose build
-...
-Building myapp
-Step 1/11 : FROM microsoft/aspnetcore-build:2.0 AS build-env
-...
-Successfully tagged localhost:5000/mycompany/myapp:latest
 $ docker-compose push
-Pushing myapp (localhost:5000/mycompany/myapp:latest)...
-...
 ```
 
 @[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
-@[2-4](Creates & links volume `docker_images`)
-@[5-10](Build all apps (...tag to `localhost:5000`))
-@[11-13](Push built images to registry)
+@[2](Build all apps (...tag to `localhost:5000`))
+@[3](Push built images to registry)
 
 ---
 
