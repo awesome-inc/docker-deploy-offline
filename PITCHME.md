@@ -17,17 +17,15 @@
 
 ### <span style="color: #e49436">Production Environment</span>
 
-- Disconnected, |
-- Remote or |
+- Disconnected, | Remote or |
 - Inaccessible |
-
-### How to deploy? |
+- How to deploy? |
 
 ---
 
 # Demo
 
-Press Down key for details. |
+Press Down key for details.
 
 +++
 
@@ -64,7 +62,7 @@ $ docker-compose run export
 
 @[1](Export volume `docker_images -> ./data/registry.bz2`.)
 
----
++++
 @title[Step 3. Ship It!]
 
 ### <span style="color: #e49436">STEP 3. Ship It!*</span>
@@ -74,7 +72,7 @@ $ docker-compose run export
 
 <span style="color: #bbb; font-size: 80%">*Not our business here.</span>
 
----
++++
 @title[Step 4. Import & Run]
 
 ### <span style="color: #e49436">STEP 4. Import & Run</span>
