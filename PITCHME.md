@@ -1,5 +1,5 @@
 @title[Introduction]
-# Offline <span style="color: #e49436">Docker</span>
+## Offline <span style="color: #e49436">Docker</span>
 
 #### How to use docker for (almost) continuous delivery to an offline environment.*
 <br>
