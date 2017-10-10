@@ -25,18 +25,25 @@
 ### <span style="color: #e49436">STEP 1. Build & Push</span>
 <br>
 
-```
+```console
 $ docker-compose up -d registry ui
 ...
 Creating volume "dockerdeployoffline_docker_images" with default driver
 ...
 $ docker-compose build
+...
+Building myapp
+Step 1/11 : FROM microsoft/aspnetcore-build:2.0 AS build-env
+...
+Successfully tagged localhost:5000/mycompany/myapp:latest
 $ docker-compose push
+Pushing myapp (localhost:5000/mycompany/myapp:latest)...
+...
 ```
 
 @[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
 @[5](Build Docker images (tag to `localhost:5000`))
-@[3](Push images to registry)
+@[11](Push images to registry)
 
 ---
 
@@ -50,8 +57,8 @@ Registry frontend on [:8080](http://localhost:8080)
 ### <span style="color: #e49436">STEP 2. Export</span>
 <br>
 
-```shell
-docker-compose run export
+```console
+$ docker-compose run export
 ```
 
 @[1](Export volume `docker_images -> ./data/registry.bz2`.)
@@ -72,10 +79,10 @@ docker-compose run export
 ### <span style="color: #e49436">STEP 4. Import & Run</span>
 <br>
 
-```shell
-docker-compose run import
-docker-compose up -d registry ui
-docker run [registry:5000]/mycompany/myapp:latest
+```console
+$ docker-compose run import
+$ docker-compose up -d registry ui
+$ docker run [registry:5000]/mycompany/myapp:latest
 ```
 
 @[1](Import volume `./data/registry.bz2 -> docker_images`.)
