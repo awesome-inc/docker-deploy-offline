@@ -17,7 +17,8 @@
 
 ### <span style="color: #e49436">Production Environment</span>
 
-- Disconnected, | Remote or |
+- Disconnected, | 
+- Remote or |
 - Inaccessible |
 - How to deploy? |
 
@@ -88,6 +89,29 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 @[2](Start registry.)
 @[3](Run one of your images.)
 
+- Press Right key |
+
+---
+
+### Ok, got it! How to apply to my codebase?
+
++++?code=docker-compose.yml
+
+@title[Step 1. Tag images]
+
+### <span style="color: #e49436">STEP 1. Tag images</span>
+<br>
+
+@[4](Tag to local/build registry `localhost:5000`)
+
++++?code=docker-compose.override.yml
+
+### <span style="color: #e49436">STEP 2. Add `docker-compose.override.yml`</span>
+<br>
+
+@[4](Tag to local/build registry `localhost:5000`)
+
++++
 ---
 
 ### View The <a target="_blank" href="https://github.com/awesome-inc/docker-deploy-offline">Code</a>
