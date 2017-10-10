@@ -42,8 +42,9 @@ Pushing myapp (localhost:5000/mycompany/myapp:latest)...
 ```
 
 @[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
-@[5](Build Docker images (tag to `localhost:5000`))
-@[11](Push images to registry)
+@[2-4](Creates & links volume `docker_images`)
+@[5-10](Build all apps (...tag to `localhost:5000`))
+@[11-13](Push built images to registry)
 
 ---
 
