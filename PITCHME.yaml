@@ -2,3 +2,4 @@ theme: night
 background: images/wallpaper.jpg
 logo: images/logo.png
 highlight : darkula
+remote-control: true
