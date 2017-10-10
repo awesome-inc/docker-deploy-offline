@@ -17,9 +17,9 @@
 
 ### <span style="color: #e49436">Production Environment</span>
 
-- Disconnected, | 
-- Remote or |
-- just inaccessible |
+- disconnected, | 
+- remote or |
+- just inaccessible. |
 - How to deploy? |
 
 ---
@@ -61,7 +61,7 @@ Registry frontend on [:8080](http://localhost:8080)
 $ docker-compose run export
 ```
 
-- Export volume `docker_images -> ./data/registry.bz2`. |
+@[1](Export volume `docker_images -> ./data/registry.bz2`.)
 
 +++
 @title[Step 3. Ship It!]
@@ -85,9 +85,9 @@ $ docker-compose up -d registry ui
 $ docker run [registry:5000]/mycompany/myapp:latest
 ```
 
-@[1](Import volume `./data/registry.bz2 -> docker_images`.)
-@[2](Start registry.)
-@[3](Run one of your images.)
+@[1](Import volume `./data/registry.bz2 -> docker_images`)
+@[2](Start registry)
+@[3](Run images)
 
 - Press Right key. |
 
@@ -103,7 +103,7 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 +++?code=docker-compose.override.yml
 
-Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff.
+@[1-20](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
 
 - That's it! |
 
