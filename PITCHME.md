@@ -25,8 +25,12 @@
 ### <span style="color: #e49436">STEP 1. Build & Push</span>
 <br>
 
-```shell
+```bash
 $ docker-compose up -d registry ui
+Creating network "dockerdeployoffline_default" with the default driver
+Creating volume "dockerdeployoffline_docker_images" with default driver
+Creating dockerdeployoffline_registry_1 ... done
+Creating dockerdeployoffline_ui_1 ... done
 $ docker-compose build
 $ docker-compose push
 ```
