@@ -10,8 +10,8 @@
 
 ### <span style="color: #e49436">Initial Situation</span>
 
-- Apps built with `Docker` |
-- Orchestrated with `docker-compose` |
+- Apps built with Docker |
+- Orchestrated with docker-compose |
 
 ---
 
