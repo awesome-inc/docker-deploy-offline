@@ -25,18 +25,17 @@
 ### <span style="color: #e49436">STEP 1. Build & Push</span>
 <br>
 
-```bash
+```ShellSession
 $ docker-compose up -d registry ui
-Creating network "dockerdeployoffline_default" with the default driver
+...
 Creating volume "dockerdeployoffline_docker_images" with default driver
-Creating dockerdeployoffline_registry_1 ... done
-Creating dockerdeployoffline_ui_1 ... done
+...
 $ docker-compose build
 $ docker-compose push
 ```
 
 @[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
-@[2](Build Docker images (tag to `localhost:5000`))
+@[5](Build Docker images (tag to `localhost:5000`))
 @[3](Push images to registry)
 
 ---
