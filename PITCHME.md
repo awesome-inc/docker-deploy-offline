@@ -16,15 +16,19 @@
 
 ---
 
+# Demo
+
+---
+
 @title[Step 1. Build & Push]
 
 ### <span style="color: #e49436">STEP 1. Build & Push</span>
 <br>
 
 ```shell
-docker-compose up -d registry ui
-docker-compose build
-docker-compose push
+$ docker-compose up -d registry ui
+$ docker-compose build
+$ docker-compose push
 ```
 
 @[1](Start local Docker registry (on `:5000`, Web UI at [:8080](http://localhost:8080)))
