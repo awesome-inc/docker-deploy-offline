@@ -17,14 +17,19 @@
 
 ### <span style="color: #e49436">Production Environment</span>
 
-#### Disconnected, Remote or Inaccessible
+- Disconnected, |
+- Remote or |
+- Inaccessible
 
 ### How to deploy?
+
 ---
 
 # Demo
 
----
+Press Down key for details. |
+
++++
 
 @title[Step 1. Build & Push]
 
@@ -41,13 +46,13 @@ $ docker-compose push
 @[2](Build all apps (...tag to `localhost:5000`))
 @[3](Push built images to registry)
 
----
++++
 
 Registry frontend on [:8080](http://localhost:8080)
 
 ![See docker images](images/ui-02-pushed.png)
 
----
++++
 @title[Step 2. Export]
 
 ### <span style="color: #e49436">STEP 2. Export</span>
