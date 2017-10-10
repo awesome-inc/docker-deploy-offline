@@ -103,7 +103,7 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 +++?code=docker-compose.override.yml
 
-@[1-20](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
+@[1-50](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
 
 - That's it! |
 
