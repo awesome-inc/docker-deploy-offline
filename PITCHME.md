@@ -101,18 +101,9 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 @[5](Tag images to local registry `localhost:5000`)
 
-+++
-
-```yml
- myapp:
-    image: ${REGISTRY:-localhost:5000}/${REPOSITORY:-mycompany}/myapp:${TAG:-latest}
-    build:
-```
-@[2](Tag images to local registry `localhost:5000`)
-
 +++?code=docker-compose.override.yml&lang=yml
 
-@[11-52](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
+@[11,24,43,47,52](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
 
 - That's it! |
 
