@@ -26,7 +26,7 @@
 
 # Demo
 
-- Press Down key for details. |
+![Press Down Key](assets/down-arrow.png)
 
 +++
 
@@ -89,13 +89,13 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 @[2](Start registry)
 @[3](Run images)
 
-- Press Right key. |
+- ![Press Right Key](assets/right-arrow.png) |
 
 ---
 
 ### Ok, got it! How to apply to my project?
 
-- Press Down key. |
+- ![Press Down Key](assets/down-arrow.png) |
 
 +++?code=docker-compose.yml&lang=yml
 
@@ -105,7 +105,8 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff
 
-@[11-13,24-25](Docker registry + Web UI)
+@[11-13](Docker registry)
+@[24-25](Web UI for registry)
 @[43-45,47-49](Export & Import)
 @[51-52](Docker volume for registry images)
 
