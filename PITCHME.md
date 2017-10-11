@@ -26,7 +26,7 @@
 
 # Demo
 
-![Press Down Key](assets/down-arrow.png)
+![Press Down Key](images/down-arrow.png)
 
 +++
 
@@ -89,13 +89,13 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 @[2](Start registry)
 @[3](Run images)
 
-- ![Press Right Key](assets/right-arrow.png) |
+- ![Press Right Key](images/right-arrow.png) |
 
 ---
 
 ### Ok, got it! How to apply to my project?
 
-- ![Press Down Key](assets/down-arrow.png) |
+- ![Press Down Key](images/down-arrow.png) |
 
 +++?code=docker-compose.yml&lang=yml
 
