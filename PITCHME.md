@@ -103,7 +103,11 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 +++?code=docker-compose.override.yml&lang=yml
 
-@[11,24,43,47,52](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
+Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff
+
+@[11-13,24-25](Docker registry + Web UI)
+@[43-45,47-49](Export & Import)
+@[51-52](Docker volume for registry images)
 
 - That's it! |
 
