@@ -97,7 +97,7 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 - Press Down key. |
 
-+++?code=docker-compose.yml
++++?code=docker-compose.yml&lang=yml
 
 @[5](Tag images to local registry `localhost:5000`)
 
@@ -110,7 +110,7 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 ```
 @[2](Tag images to local registry `localhost:5000`)
 
-+++?code=docker-compose.override.yml
++++?code=docker-compose.override.yml&lang=yml
 
 @[11-52](Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff)
 
