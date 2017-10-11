@@ -26,8 +26,6 @@
 
 # Demo
 
-![Press Down Key](images/down-arrow.png)
-
 +++
 
 @title[Step 1. Build & Push]
@@ -89,13 +87,9 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 @[2](Start registry)
 @[3](Run images)
 
-- ![Press Right Key](images/right-arrow.png) |
-
 ---
 
 ### Ok, got it! How to apply to my project?
-
-- ![Press Down Key](images/down-arrow.png) |
 
 +++?code=docker-compose.yml&lang=yml
 
@@ -103,7 +97,7 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 +++?code=docker-compose.override.yml&lang=yml
 
-Add this [docker-compose.override.yml](docker-compose.override.yml) for registry/export/import fluff
+Add this [docker-compose.override.yml](https://github.com/awesome-inc/docker-deploy-offline/blob/master/docker-compose.override.yml) for registry/export/import fluff
 
 @[11-13](Docker registry)
 @[24-25](Web UI for registry)
