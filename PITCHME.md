@@ -93,11 +93,13 @@ $ docker run [registry:5000]/mycompany/myapp:latest
 
 +++?code=docker-compose.yml&lang=yml
 
+In your `docker-compose.yml`:
+
 @[5](Tag images to local registry `localhost:5000`)
 
 +++?code=docker-compose.override.yml&lang=yml
 
-Add this [docker-compose.override.yml](https://github.com/awesome-inc/docker-deploy-offline/blob/master/docker-compose.override.yml) for registry/export/import fluff
+Add this [docker-compose.override.yml](https://github.com/awesome-inc/docker-deploy-offline/blob/master/docker-compose.override.yml) for:
 
 @[11-13](Docker registry)
 @[24-25](Web UI for registry)
