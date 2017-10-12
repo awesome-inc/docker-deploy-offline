@@ -31,7 +31,7 @@
   - Docker: Workflow for runtimes images |
 
 ---
-
+<!-- .slide: data-background-transition="none" -->
 ### <span style="color: #e49436">Docker Workflow</span>
 
 - Changes, Revisions:
