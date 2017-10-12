@@ -32,51 +32,45 @@
 
 ---
 <!-- .slide: data-background-transition="none" -->
-### <span style="color: #e49436">Docker Workflow</span>
+### <span style="color: #e49436">Changes, Revisions</span>
 
-- Changes, Revisions:
-  - git commit |
-  - docker build |
-
----
-
-### <span style="color: #e49436">Docker Workflow</span>
-
-- Tagging:
-  - git tag |
-  - docker tag |
+- git commit |
+- docker build |
 
 ---
 
-### <span style="color: #e49436">Docker Workflow</span>
+### <span style="color: #e49436">Tagging</span>
 
-- Publish:
-  - git push |
-  - docker tag |
-
----
-
-### <span style="color: #e49436">Docker Workflow</span>
-
-- Consume:
-  - git pull |
-  - docker pull |
+- git tag |
+- docker tag |
 
 ---
 
-### <span style="color: #e49436">Docker Workflow</span>
+### <span style="color: #e49436">Publish</span>
 
-- Transfer Medium (online):
-  - git server (e.g. GitHub) |
-  - docker registry (e.g. DockerHub) |
+- git push |
+- docker tag |
 
 ---
 
-### <span style="color: #e49436">Docker Workflow</span>
+### <span style="color: #e49436">Consume</span>
 
-- Transfer Medium (offline):
-  - git bare repository |
-  - docker registry (custom) |
+- git pull |
+- docker pull |
+
+---
+
+### <span style="color: #e49436">Transfer Medium (online)</span>
+
+- git server (e.g. GitHub) |
+- docker registry (e.g. DockerHub) |
+
+---
+
+### <span style="color: #e49436">Transfer Medium (offline)</span>
+
+- git bare repository |
+- docker registry (custom) |
 
 ---
 
