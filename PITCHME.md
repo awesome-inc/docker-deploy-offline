@@ -28,49 +28,49 @@
 
 - Similar to Git:
   - Git: Workflow for code |
-  - Docker: Workflow for runtimes images |
+  - Docker: Workflow for runtime images |
 
 ---
 <!-- .slide: data-background-transition="none" -->
 ### <span style="color: #e49436">Changes, Revisions</span>
 
-- git commit |
-- docker build |
+- [git commit](https://git-scm.com/docs/git-commit) |
+- [docker commit](https://docs.docker.com/engine/reference/commandline/commit/), [docker build](https://docs.docker.com/engine/reference/commandline/build/) |
 
 ---
 
 ### <span style="color: #e49436">Tagging</span>
 
-- git tag |
-- docker tag |
+- [git tag](https://git-scm.com/docs/git-tag) |
+- [docker tag](https://docs.docker.com/engine/reference/commandline/tag/) |
 
 ---
 
 ### <span style="color: #e49436">Publish</span>
 
-- git push |
-- docker tag |
+- [git push](https://git-scm.com/docs/git-push) |
+- [docker push](https://docs.docker.com/engine/reference/commandline/push/) |
 
 ---
 
 ### <span style="color: #e49436">Consume</span>
 
-- git pull |
-- docker pull |
+- [git pull](https://git-scm.com/docs/git-pull) |
+- [docker pull](https://docs.docker.com/engine/reference/commandline/pull/) |
 
 ---
 
 ### <span style="color: #e49436">Transfer Medium (online)</span>
 
-- git server (e.g. GitHub) |
-- docker registry (e.g. DockerHub) |
+- git server (e.g. [GitHub](https://github.com/)) |
+- docker registry (e.g. [DockerHub](https://hub.docker.com/)) |
 
 ---
 
 ### <span style="color: #e49436">Transfer Medium (offline)</span>
 
-- git bare repository |
-- docker registry (custom) |
+- [git bare repository](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server) |
+- [docker registry (custom)](https://docs.docker.com/registry/) |
 
 ---
 
