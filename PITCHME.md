@@ -26,41 +26,57 @@
 
 ### <span style="color: #e49436">Docker Workflow</span>
 
-Similar to Git:
-- Git: Workflow for code |
-- Docker: Workflow for runtimes images |
+- Similar to Git:
+  - Git: Workflow for code |
+  - Docker: Workflow for runtimes images |
 
 ---
 
 ### <span style="color: #e49436">Docker Workflow</span>
 
-Changes, Revisions:
-- `git commit` |
-- `docker build` |
+- Changes, Revisions:
+  - git commit |
+  - docker build |
 
 ---
 
 ### <span style="color: #e49436">Docker Workflow</span>
 
-Tagging:
-- `git tag` |
-- `docker tag` |
+- Tagging:
+  - git tag |
+  - docker tag |
 
 ---
 
 ### <span style="color: #e49436">Docker Workflow</span>
 
-Publish:
-- `git push` |
-- `docker tag` |
+- Publish:
+  - git push |
+  - docker tag |
 
 ---
 
 ### <span style="color: #e49436">Docker Workflow</span>
 
-Consume:
-- `git pull` |
-- `docker pull` |
+- Consume:
+  - git pull |
+  - docker pull |
+
+---
+
+### <span style="color: #e49436">Docker Workflow</span>
+
+- Transfer Medium (online):
+  - git server (e.g. GitHub) |
+  - docker registry (e.g. DockerHub) |
+
+---
+
+### <span style="color: #e49436">Docker Workflow</span>
+
+- Transfer Medium (offline):
+  - git bare repository |
+  - docker registry (custom) |
 
 ---
 
