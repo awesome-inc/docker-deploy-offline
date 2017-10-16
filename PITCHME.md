@@ -17,7 +17,7 @@
 
 ### <span style="color: #e49436">Production Environment</span>
 
-- disconnected, | 
+- disconnected, |
 - remote or |
 - just inaccessible. |
 - How to deploy? |
@@ -106,10 +106,12 @@ Registry frontend on [:8080](http://localhost:8080)
 <br>
 
 ```console
-$ docker-compose run export
+docker-compose run export
+docker save -o ./data/registry.tar registry:2.6.2 konradkleine/docker-registry-frontend:v2
 ```
 
-@[1](Export volume `docker_images -> ./data/registry.bz2`.)
+@[1](Export volume `docker_images -> ./data/docker_images.bz2`.)
+@[2](Save `registry` images (you're offline, remember?))
 
 +++
 @title[Step 3. Ship It!]
@@ -128,14 +130,16 @@ $ docker-compose run export
 <br>
 
 ```console
-$ docker-compose run import
-$ docker-compose up -d registry ui
-$ docker run [registry:5000]/mycompany/myapp:latest
+docker load -i ./data/registry.tar
+docker-compose run import
+docker-compose up -d registry ui
+docker run [registry:5000]/mycompany/myapp:latest
 ```
 
-@[1](Import volume `./data/registry.bz2 -> docker_images`)
-@[2](Start registry)
-@[3](Run images)
+@[1](Load `registry` images (you're offline, rembember?))
+@[2](Import volume `./data/docker_images.bz2 -> docker_images`)
+@[3](Start your registry)
+@[4](Run images, pulling from your registry)
 
 ---
 
