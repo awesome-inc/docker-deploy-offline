@@ -14,6 +14,21 @@ docker-compose build
 docker-compose push
 ```
 
+You can also configure another registry, that should be used as [pull through cache](https://docs.docker.com/registry/recipes/mirror/). That enables you to pull
+custom images, e.g. from your company registry. To achieve this add the environment variable `REGISTRY_PROXY_REMOTEURL` to `docker-compose.override.yml`:
+
+```yaml
+environment:
+    ...
+    REGISTRY_PROXY_REMOTEURL: https://<your-awesome-registry>
+```
+
+Afterwards you can just pull your images into your local registry via:
+
+```shell
+docker pull localhost:5000/<repo>/<image>:<tag>
+```
+
 Fire up the registry frontend on [http://localhost:8080](http://localhost:8080) and watch your built images.
 Docker images are contained in the docker volume `docker_images`.
 

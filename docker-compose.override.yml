@@ -19,6 +19,9 @@ services:
       REGISTRY_STORAGE_DELETE_ENABLED: "true"
       # REGISTRY_HTTP_TLS_CERTIFICATE: /certs/domain.crt
       # REGISTRY_HTTP_TLS_KEY: /certs/domain.key
+      # You can also configure another registry as a pull through cache
+      # c.f. https://docs.docker.com/registry/recipes/mirror/
+      # REGISTRY_PROXY_REMOTEURL: https://<your-awesome-registry>
 
   # cf.: https://github.com/kwk/docker-registry-frontend/tree/v2
   ui:

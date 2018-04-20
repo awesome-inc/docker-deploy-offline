@@ -100,6 +100,25 @@ Registry frontend on [:8080](http://localhost:8080)
 ![See docker images](images/ui-02-pushed.png)
 
 +++
+### <span style="color: #e49436">Pull Through Cache</span>
+<br>
+
+You can also access local images, e.g. from your company registry.
+
+Add the registry acting as [pull through cache](https://docs.docker.com/registry/recipes/mirror/) to `docker-compose`:
+
+```yaml
+environment:
+    ...
+    REGISTRY_PROXY_REMOTEURL: https://<your-awesome-registry>
+```
+
+Afterwards just pull your local images:
+
+```shell
+docker pull localhost:5000/<repo>/<image>:<tag>
+```
++++
 @title[Step 2. Export]
 
 ### <span style="color: #e49436">STEP 2. Export</span>
